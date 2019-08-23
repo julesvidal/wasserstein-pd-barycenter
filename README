@@ -57,7 +57,7 @@ $ apt-get install g++ cmake libvtk6-dev python3-dev \
 
 2) Compiling the code:
 ==
-Enter the 'wasserstein_pd_barycenter' directory and type the following command (omit the "$" character):
+Enter the 'wasserstein-pd-barycenter' directory and type the following command (omit the "$" character):
 
 $ mkdir build install
 $ cd build
@@ -76,7 +76,7 @@ $ make install
 Download the ZIP archive from the following website (please use a web browser):
 https://drive.google.com/open?id=1fxPAUmYT4UAUHh7K0w83znckyw_NTLan
 
-And extract the ZIP archive in the 'wasserstein_barycenter' directory with:
+And extract the ZIP archive in the 'wasserstein-pd-barycenter' directory with:
 
 $ unzip data.zip
 
