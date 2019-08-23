@@ -11,13 +11,13 @@ echo -e "\n\nResults of tables 1,2 and 3\n\n"
 # done
 
 # echo -e "\nAuction approach" 
-# ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
+# ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
 
 # echo -e "\nOur approach -- 1 thread" 
-# ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
+# ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
 
 # echo -e "\nOur approach -- 8 threads" 
-# ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
+# ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
 
 ##############################################
 echo -e "\n\n______ data-set : VORTEXSTREET ______" 
@@ -28,13 +28,13 @@ for I in {00..44}; do
 done
 
 echo -e "\nAuction approach" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
 
 echo -e "\nOur approach -- 1 thread" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
 
 echo -e "\nOur approach -- 8 threads" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
 
 ##############################################
 echo -e "\n\n______ data-set : STARTINGVORTEX ______" 
@@ -45,13 +45,13 @@ for I in {00..11}; do
 done
 
 echo -e "\nAuction approach" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
 
 echo -e "\nOur approach -- 1 thread" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
 
 echo -e "\nOur approach -- 8 threads" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
 
 ##############################################
 echo -e "\n\n______ data-set : ISABEL ______" 
@@ -62,13 +62,13 @@ for I in {00..11}; do
 done
 
 echo -e "\nAuction approach" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
 
 echo -e "\nOur approach -- 1 thread" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
 
 echo -e "\nOur approach -- 8 threads" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
 
 ##############################################
 echo -e "\n\n______ data-set : SEASURFACEHEIGHT ______" 
@@ -79,12 +79,12 @@ for I in {00..47}; do
 done
 
 echo -e "\nAuction approach" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_auction -d -3 -T 100000000 -t 1 -M 2 
 
 echo -e "\nOur approach -- 1 thread" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_ours_1thr -d -3 -T 100000000 -t 1 -M 0 
 
 echo -e "\nOur approach -- 8 threads" 
-ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_ours_8thr -d -3 -T 100000000 -t 8 -M 0 
 
 rm output_*
