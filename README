@@ -1,0 +1,305 @@
+
+DATA DISCLAIMER
+===
+The data sets contained in this archive are the property of their copyright
+owners. They are made available in this archive for research purpose only. They
+should not be redistributed publicly without their owner's permission.
+
+
+CODE DISCLAIMER
+===
+This code is provided "as is" without warranty of any kind. It is made available
+under the licensing terms described in the file 'LICENSE'.
+
+
+RELATED PUBLICATION
+===
+"Progressive Wasserstein Barycenters of Persistence Diagrams"
+Jules Vidal, Joseph Budin, Julien Tierny
+IEEE Transactions on Visualization and Computer Graphics.
+Proceedings of IEEE VIS 2019.
+
+
+---
+
+
+INSTRUCTIONS
+===
+The following instructions are for Unix environments (MacOS, Linux, etc.). For
+Windows users, please follow the usual procedure to import a CMake project into
+VisualStudio (please be careful though, important directory paths may need to
+be changed for the program to run properly).
+
+
+1) Software requirements:
+==
+This code requires the VTK development libraries to be installed on the system
+(version 6.1 or higher). Please see http://www.vtk.org/ for installation
+instructions.
+
+A recent version of ParaView (http://www.paraview.org) should be installed (tested
+with version 5.4.1).
+
+A recent version of CMake (http://www.cmake.org) should be installed (tested
+with version 2.8).
+
+A recent version of Python (http://www.python.org/) should be installed (tested
+with version 3.6.3).
+
+
+Assuming that a Ubuntu 18.04 system is used, enter the following commands to
+install the required dependencies:
+
+$ apt-get update
+$ apt-get install g++ cmake libvtk6-dev python3-dev \
+  python3-numpy paraview
+
+
+2) Compiling the code:
+==
+Enter the 'wasserstein_pd_barycenter' directory and type the following command (omit the "$" character):
+
+$ mkdir build install
+$ cd build
+
+From there, enter the following commands:
+
+$ cmake ../ttk -DCMAKE_INSTALL_PREFIX=../install
+
+Next, enter the following command to build and install:
+
+$ make install
+
+
+3) Reproducing the results from the paper:
+==
+Download the ZIP archive from the following website (please use a web browser):
+https://drive.google.com/open?id=1fxPAUmYT4UAUHh7K0w83znckyw_NTLan
+
+And extract the ZIP archive in the 'wasserstein_barycenter' directory with:
+
+$ unzip data.zip
+
+You are now able to reproduce the different results of the paper. Go to the
+scripts/ folder :
+
+$ mv scripts/
+
+Tables
+_____________
+To reproduce the tables :
+
+Go to the tables/ folder and run each one of the following scripts to print
+the content of tables 1, 2 and 3.
+
+$ mv tables/
+$ ./table1.sh
+$ ./table2.sh
+$ ./table3.sh
+
+Figure 1
+-------------
+To reproduce the clustering output of figure 1, go to the fig1/ folder and run
+the script:
+
+$ mv fig1
+$ ./fig1.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig1.pvsm
+
+
+Figure 5
+-------------
+To reproduce figure 5, go to the fig5/ folder and run
+the script:
+
+$ mv fig5
+$ ./fig5.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig5.pvsm
+
+
+Figure 6
+-------------
+To reproduce the orange curve of figure 6, go to the fig6/ folder and run
+the script:
+
+$ mv fig6
+$ ./fig6.sh
+
+This will run the algorithm and output the data : the energy.txt file contains
+the energy values and associated time values. The data may for instance be
+plotted with gnuplot :
+
+$ gnuplot -e "set logscale;set xrange [.8:200]; plot 'energy.txt' u 2:1 w l" -persist
+
+
+Figure 7
+-------------
+To reproduce figure 7, go to the fig7/ folder and run
+the script:
+
+$ mv fig7
+$ ./fig7.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig7.pvsm
+
+
+Figure 8
+-------------
+To reproduce figure 8, go to the fig8/ folder and run
+the script:
+
+$ mv fig8
+$ ./fig8.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig8.pvsm
+
+
+Figure 9
+-------------
+To reproduce figure 9, go to the fig9/ folder and run
+the script:
+
+$ mv fig9
+$ ./fig9.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig9.pvsm
+
+
+Figure 10
+-------------
+To reproduce figure 10, go to the fig10/ folder and run
+the script:
+
+$ mv fig10
+$ ./fig10.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig10.pvsm
+
+
+Figure 11
+-------------
+To reproduce figure 11, go to the fig11/ folder and run
+the script:
+
+$ mv fig11
+$ ./fig11.sh
+
+This will run the algorithm and output the results as .vtu files in the
+vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state :
+
+$ paraview --state=./fig11.pvsm
+
+
+Timings
+-------------
+The additionnal script script/timings.sh runs all the experiments providing
+timing results, namely the content of tables 1 and 2. Attached is the output
+of this script run on our desktop computer, with its specifications.
+
+
+4) Program options and arguments:
+==
+The above installation have provided you with two executables files : 
+ttkPersistenceDiagramsBarycenterCmd and
+ttkPersistenceDiagramsClusteringCmd, available in `install/bin/`
+
+You can directly use those in order to try out our implementation of our
+method.
+Simply entering one of those commands should list you the needed parameters.
+
+For the barycenter computation : 
+
+$ ./ttkPersistenceDiagramsBarycenterCmd 
+[CommandLine] Missing mandatory argument:
+[CommandLine]   -i <{Input data-sets (*.vti, *vtu, *vtp)}>
+[CommandLine]
+[CommandLine] Usage:
+[CommandLine]   ttkPersistenceDiagramsBarycenterCmd
+[CommandLine] Argument(s):
+[CommandLine]   [-d <Global debug level (default: 3)>]
+[CommandLine]   [-t <Global thread number (default: 16)>]
+[CommandLine]   [-G <geometry (default: 1)>]
+[CommandLine]   [-M <algorithm : 0= prog PB, 2=Auction (default: 0)>]
+[CommandLine]   [-plot <computes and outputs the real cost evolution (default: 0)>]
+[CommandLine]   [-P <use progressive computation (default: 1)>]
+[CommandLine]   [-T <Time Limit for Computation, in seconds. No time limit by default (default: -1)>]
+[CommandLine]   -i <{Input data-sets (*.vti, *vtu, *vtp)}>
+[CommandLine]   [-o <Output file name base (no extension) (default: `output')>]
+[CommandLine] Option(s):
+
+For the clustering computation : 
+
+$ ./ttkPersistenceDiagramsClusteringCmd
+[CommandLine] Missing mandatory argument:
+[CommandLine]   -i <{Input data-sets (*.vti, *vtu, *vtp)}>
+[CommandLine]
+[CommandLine] Usage:
+[CommandLine]   ttkPersistenceDiagramsClusteringCmd
+[CommandLine] Argument(s):
+[CommandLine]   [-d <Global debug level (default: 3)>]
+[CommandLine]   [-t <Global thread number (default: 16)>]
+[CommandLine]   [-P <Set the type of critical pairs considered in the clustering.
+                        -1 : all critical pairs
+                         0 : only min-saddle pairs
+                         1 : onlysaddle-saddle pairs
+                         2 : only saddle-max pairs
+                 (default: -1)>]
+[CommandLine]   [-A <Use the kmean acceleration (default: 1)>]
+[CommandLine]   [-I <Use the kmeanspp init. (default: 1)>]
+[CommandLine]   [-K <Number of Clusters (default: 1)>]
+[CommandLine]   [-T <Time Limit for Computation, in seconds. No time limit by default (default: -1)>]
+[CommandLine]   [-G <Geometry Penalization, bet 0. and 1., 1. means no lifting (default: 1)>]
+[CommandLine]   -i <{Input data-sets (*.vti, *vtu, *vtp)}>
+[CommandLine]   [-o <Output file name base (no extension) (default: `output')>]
+[CommandLine] Option(s):
+
+
+A standard exemple for the barycenter computation of two persistence diagrams
+within 1 second and minimal verbosity is :
+
+$ ttkPersistenceDiagramsBarycenterCmd -i diagram1.vtu -i diagram2.vtu -o output_barycenter -T 1 -d 1 
+
+
+Look at the provided scripts for more examples on how to use those commands.
+
+
+6) Using your own data :
+==
+
+If you want to test our approach on your own data,
+you will need to pre-compute the persistence diagrams.
+For this purpose, we provide the implementation of Gueunet et al., available
+in the Topology ToolKit (https://topology-tool-kit.github.io/).
+
+Note that your data must be in a *.vtu* or *.vti* format.
+
+Simply use the ttkPersistenceDiagramCmd command as so :
+
+$ ttkPersistenceDiagramCmd  -i your_vtu_or_vti_data_file -o output_diagram.vtu -F your_scalarField_index_in_the_data

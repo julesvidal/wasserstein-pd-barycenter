@@ -1,0 +1,12 @@
+
+Timings : results of tables 1 and 2
+
+
+
+
+______ data-set : GAUSSIANS ______
+
+Auction approach
+[PersistenceDiagramsBarycenter] processed in 11341.3 s. (1 thread(s)).
+
+Our approach -- 1 thread
