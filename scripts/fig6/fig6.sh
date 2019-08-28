@@ -6,7 +6,7 @@ echo -e "\n\n______ data-set : SEASURFACEHEIGHT ______"
 
 fileList=""
 for I in {00..47}; do
-  fileList="$fileList -i ../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
+  fileList="$fileList -i ../../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
 done
 echo -e "\nOur approach -- 1 thread" 
 ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output -d -3 -T 99999999 -t 1 -M 0 -plot 1

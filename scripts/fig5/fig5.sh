@@ -7,7 +7,7 @@ echo -e "\n\n______ data-set : GAUSSIANS ______"
 
 fileList=""
 for I in {25..74}; do
-  fileList="$fileList -i ../data/diagrams/gaussians/diagram_"$I".vtu"
+  fileList="$fileList -i ../../data/diagrams/gaussians/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach"
@@ -21,7 +21,7 @@ echo -e "\nOur approach -- 1 thread"
 
  fileList=""
  for I in {09..17}; do
-   fileList="$fileList -i ../data/diagrams/vortexStreet/diagram_"$I".vtu"
+   fileList="$fileList -i ../../data/diagrams/vortexStreet/diagram_"$I".vtu"
  done
 
  echo -e "\nAuction approach"
@@ -35,7 +35,7 @@ echo -e "\n\n______ data-set : STARTINGVORTEX ______"
 
 fileList=""
 for I in {06..11}; do
-  fileList="$fileList -i ../data/diagrams/startingVortex/diagram_"$I".vtu"
+  fileList="$fileList -i ../../data/diagrams/startingVortex/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach"
@@ -49,7 +49,7 @@ echo -e "\n\n______ data-set : ISABEL ______"
 
 fileList=""
 for I in {04..07}; do
-  fileList="$fileList -i ../data/diagrams/isabel/diagram_"$I".vtu"
+  fileList="$fileList -i ../../data/diagrams/isabel/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach"
@@ -63,7 +63,7 @@ echo -e "\n\n______ data-set : SEASURFACEHEIGHT ______"
 
 fileList=""
 for I in {35..47}; do
-  fileList="$fileList -i ../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
+  fileList="$fileList -i ../../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach"

@@ -5,7 +5,7 @@ echo -e "\n\nResults of figure 7\n\n"
 
 fileList=""
 for I in {36..47}; do
-  fileList="$fileList -i ../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
+  fileList="$fileList -i ../../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
 done
 
 ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o vtu_outputs/output_0.1s -d 0 -T 0.1 -t 1 -M 0 
