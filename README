@@ -64,12 +64,25 @@ $ cd build
 
 From there, enter the following commands:
 
-$ cmake ../ttk -DCMAKE_INSTALL_PREFIX=../install
+$ cmake-gui ../ttk 
 
-Next, enter the following command to build and install:
+The configuration windows opens. Proceed as follows :
+1. Click on the "Configure" button. Use the default settings in the pop-up
+   window.
+2. After configuration, make sure that the following variables are set as follows :  
+  * CMAKE_INSTALL_PREFIX = `../../install`
+  * TTK_BUILD_PARAVIEW_PLUGINS = OFF
+  * TTK_BUILD_STANDALONE_APPS = ON
+3. Click on the "Generate" button and close the configuration window when the generation is completed.
 
+In order to build the project, enter the following command, where `N` is the number of available cores on your system (this will take a **LONG** time):
+```bash
+$ make -jN
+```
+Once the build is finished, enter the following command to install the project
+in the *install* folder:
+```bash
 $ make install
-
 
 3) Reproducing the results from the paper:
 ==
@@ -83,7 +96,7 @@ $ unzip data.zip
 You are now able to reproduce the different results of the paper. Go to the
 scripts/ folder :
 
-$ mv scripts/
+$ cd scripts/
 
 Tables
 _____________
@@ -92,7 +105,7 @@ To reproduce the tables :
 Go to the tables/ folder and run each one of the following scripts to print
 the content of tables 1, 2 and 3.
 
-$ mv tables/
+$ cd tables/
 $ ./table1.sh
 $ ./table2.sh
 $ ./table3.sh
@@ -102,7 +115,7 @@ Figure 1
 To reproduce the clustering output of figure 1, go to the fig1/ folder and run
 the script:
 
-$ mv fig1
+$ cd fig1
 $ ./fig1.sh
 
 This will run the algorithm and output the results as .vtu files in the
@@ -117,7 +130,7 @@ Figure 5
 To reproduce figure 5, go to the fig5/ folder and run
 the script:
 
-$ mv fig5
+$ cd fig5
 $ ./fig5.sh
 
 This will run the algorithm and output the results as .vtu files in the
@@ -132,7 +145,7 @@ Figure 6
 To reproduce the orange curve of figure 6, go to the fig6/ folder and run
 the script:
 
-$ mv fig6
+$ cd fig6
 $ ./fig6.sh
 
 This will run the algorithm and output the data : the energy.txt file contains
@@ -147,7 +160,7 @@ Figure 7
 To reproduce figure 7, go to the fig7/ folder and run
 the script:
 
-$ mv fig7
+$ cd fig7
 $ ./fig7.sh
 
 This will run the algorithm and output the results as .vtu files in the
@@ -162,7 +175,7 @@ Figure 8
 To reproduce figure 8, go to the fig8/ folder and run
 the script:
 
-$ mv fig8
+$ cd fig8
 $ ./fig8.sh
 
 This will run the algorithm and output the results as .vtu files in the
@@ -177,7 +190,7 @@ Figure 9
 To reproduce figure 9, go to the fig9/ folder and run
 the script:
 
-$ mv fig9
+$ cd fig9
 $ ./fig9.sh
 
 This will run the algorithm and output the results as .vtu files in the
@@ -192,7 +205,7 @@ Figure 10
 To reproduce figure 10, go to the fig10/ folder and run
 the script:
 
-$ mv fig10
+$ cd fig10
 $ ./fig10.sh
 
 This will run the algorithm and output the results as .vtu files in the
@@ -207,7 +220,7 @@ Figure 11
 To reproduce figure 11, go to the fig11/ folder and run
 the script:
 
-$ mv fig11
+$ cd fig11
 $ ./fig11.sh
 
 This will run the algorithm and output the results as .vtu files in the
