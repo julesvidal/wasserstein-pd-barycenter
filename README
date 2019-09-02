@@ -51,7 +51,7 @@ Assuming that a Ubuntu 18.04 system is used, enter the following commands to
 install the required dependencies:
 
 $ apt-get update
-$ apt-get install g++ cmake libvtk6-dev python3-dev \
+$ apt-get install g++ cmake-qt-gui libvtk6-dev python3-dev \
   python3-numpy paraview
 
 
