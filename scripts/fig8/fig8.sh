@@ -27,5 +27,5 @@ fileList=""
 for I in {00..99}; do
   fileList="$fileList -i ../../data/diagrams/gaussians/diagram_"$I".vtu"
 done
-../../install/bin/ttkPersistenceDiagramsClusteringCmd $fileList -o vtu_outputs/output_clustering -d 0 -T 10 -G 0.2 -K 3 -P 2 -A 1 -I 1 -t 1
+../../install/bin/ttkPersistenceDiagramsClusteringCmd $fileList -o vtu_outputs/output_clustering -d 0 -T 20 -G 0.2 -K 3 -P 2 -A 1 -I 1 -t 1
 
