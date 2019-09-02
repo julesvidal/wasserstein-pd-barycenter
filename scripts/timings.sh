@@ -7,7 +7,7 @@ echo -e "\nTimings : results of tables 1 and 2\n\n"
 
  fileList=""
  for I in {00..99}; do
-   fileList="$fileList -i ./data/diagrams/gaussians/diagram_"$I".vtu"
+   fileList="$fileList -i ../data/diagrams/gaussians/diagram_"$I".vtu"
  done
 
  echo -e "\nAuction approach" 
@@ -25,7 +25,7 @@ echo -e "\n\n______ data-set : VORTEXSTREET ______"
 
 fileList=""
 for I in {00..44}; do
-  fileList="$fileList -i ./data/diagrams/vortexStreet/diagram_"$I".vtu"
+  fileList="$fileList -i ../data/diagrams/vortexStreet/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach" 
@@ -43,7 +43,7 @@ echo -e "\n\n______ data-set : STARTINGVORTEX ______"
 
 fileList=""
 for I in {00..11}; do
-  fileList="$fileList -i ./data/diagrams/startingVortex/diagram_"$I".vtu"
+  fileList="$fileList -i ../data/diagrams/startingVortex/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach" 
@@ -61,7 +61,7 @@ echo -e "\n\n______ data-set : ISABEL ______"
 
 fileList=""
 for I in {00..11}; do
-  fileList="$fileList -i ./data/diagrams/isabel/diagram_"$I".vtu"
+  fileList="$fileList -i ../data/diagrams/isabel/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach" 
@@ -79,7 +79,7 @@ echo -e "\n\n______ data-set : SEASURFACEHEIGHT ______"
 
 fileList=""
 for I in {00..47}; do
-  fileList="$fileList -i ./data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
+  fileList="$fileList -i ../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
 done
 
 echo -e "\nAuction approach" 
