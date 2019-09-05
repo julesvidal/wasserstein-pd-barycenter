@@ -3,18 +3,18 @@
 echo -e "\n\nResults of tables 1,2 and 3\n\n"
 
 ##############################################
-# echo -e "\n\n______ data-set : GAUSSIANS ______"
+echo -e "\n\n______ data-set : GAUSSIANS ______"
 
-# fileList=""
-# for I in {00..99}; do
-#   fileList="$fileList -i ../../data/diagrams/gaussians/diagram_"$I".vtu"
-# done
+fileList=""
+for I in {00..99}; do
+  fileList="$fileList -i ../../data/diagrams/gaussians/diagram_"$I".vtu"
+done
 
-# echo -e "\nAuction approach"
-# ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_auction -d -1 -T 100000000 -t 1 -M 2
+echo -e "\nAuction approach"
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_auction -d -1 -T 100000000 -t 1 -M 2
 
-# echo -e "\nOur approach -- 1 thread"
-# ../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_1thr -d -1 -T 100000000 -t 1 -M 0
+echo -e "\nOur approach -- 1 thread"
+../../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_1thr -d -1 -T 100000000 -t 1 -M 0
 
 
 ##############################################
