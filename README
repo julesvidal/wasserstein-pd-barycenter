@@ -1,15 +1,12 @@
 
 DATA DISCLAIMER
 ===
-The data sets contained in this archive are the property of their copyright
-owners. They are made available in this archive for research purpose only. They
-should not be redistributed publicly without their owner's permission.
+The data sets contained in this archive are the property of their copyright owners. They are made available in this archive for research purpose only. They should not be redistributed publicly without their owner's permission.
 
 
 CODE DISCLAIMER
 ===
-This code is provided "as is" without warranty of any kind. It is made available
-under the licensing terms described in the file 'LICENSE'.
+This code is provided "as is" without warranty of any kind. It is made available under the licensing terms described in the file 'LICENSE'.
 
 
 RELATED PUBLICATION
@@ -25,30 +22,21 @@ Proceedings of IEEE VIS 2019.
 
 INSTRUCTIONS
 ===
-The following instructions are for Unix environments (MacOS, Linux, etc.). For
-Windows users, please follow the usual procedure to import a CMake project into
-VisualStudio (please be careful though, important directory paths may need to
-be changed for the program to run properly).
+The following instructions are for Unix environments (MacOS, Linux, etc.). For Windows users, please follow the usual procedure to import a CMake project into VisualStudio (please be careful though, important directory paths may need to be changed for the program to run properly).
 
 
 1) Software requirements:
 ==
-This code requires the VTK development libraries to be installed on the system
-(version 6.1 or higher). Please see http://www.vtk.org/ for installation
-instructions.
+This code requires the VTK development libraries to be installed on the system (version 6.1 or higher). Please see http://www.vtk.org/ for installation instructions.
 
-A recent version of ParaView (http://www.paraview.org) should be installed (tested
-with version 5.4.1).
+A recent version of ParaView (http://www.paraview.org) should be installed (tested with version 5.4.1).
 
-A recent version of CMake (http://www.cmake.org) should be installed (tested
-with version 2.8).
+A recent version of CMake (http://www.cmake.org) should be installed (tested with version 2.8).
 
-A recent version of Python (http://www.python.org/) should be installed (tested
-with version 3.6.3).
+A recent version of Python (http://www.python.org/) should be installed (tested with version 3.6.3).
 
 
-Assuming that a Ubuntu 18.04 system is used, enter the following commands to
-install the required dependencies:
+Assuming that a Ubuntu 18.04 system is used, enter the following commands to install the required dependencies:
 
 $ apt-get update
 $ apt-get install g++ cmake-qt-gui libvtk6-dev python3-dev \
@@ -67,8 +55,7 @@ From there, enter the following commands:
 $ cmake-gui ../ttk 
 
 The configuration windows opens. Proceed as follows :
-1. Click on the "Configure" button. Use the default settings in the pop-up
-   window.
+1. Click on the "Configure" button. Use the default settings in the pop-up window.
 2. After configuration, make sure that the following variables are set as follows :  
   * CMAKE_INSTALL_PREFIX = `../../install`
   * TTK_BUILD_PARAVIEW_PLUGINS = OFF
@@ -79,8 +66,7 @@ In order to build the project, enter the following command, where `N` is the num
 ```bash
 $ make -jN
 ```
-Once the build is finished, enter the following command to install the project
-in the *install* folder:
+Once the build is finished, enter the following command to install the project in the *install* folder:
 ```bash
 $ make install
 
@@ -93,8 +79,7 @@ And extract the ZIP archive in the 'wasserstein-pd-barycenter' directory with:
 
 $ unzip data.zip
 
-You are now able to reproduce the different results of the paper. Go to the
-scripts/ folder :
+You are now able to reproduce the different results of the paper. Go to the scripts/ folder :
 
 $ cd scripts/
 
@@ -103,8 +88,7 @@ _____________
 To reproduce the tables :
 
 Go to the tables/ folder and run each one of the following scripts to print
-the content of tables 1, 2 and 3.
-
+the content of tables 1, 2 and 3. 
 $ cd tables/
 $ ./table1.sh
 $ ./table2.sh
@@ -112,141 +96,122 @@ $ ./table3.sh
 
 Figure 1
 -------------
-To reproduce the clustering output of figure 1, go to the fig1/ folder and run
-the script:
+To reproduce the clustering output of figure 1, go to the fig1/ folder and run the script:
 
 $ cd fig1
 $ ./fig1.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
+ :
 
-$ paraview --state=./fig1.pvsm
+$ paraview --state=./fig1_5.4.pvsm
 
 
 Figure 5
 -------------
-To reproduce figure 5, go to the fig5/ folder and run
-the script:
+To reproduce figure 5, go to the fig5/ folder and run the script:
 
 $ cd fig5
 $ ./fig5.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
+ :
 
-$ paraview --state=./fig5.pvsm
+$ paraview --state=./fig5_5.4.pvsm
 
 
 Figure 6
 -------------
-To reproduce the orange curve of figure 6, go to the fig6/ folder and run
-the script:
+To reproduce the orange curve of figure 6, go to the fig6/ folder and run the script:
 
 $ cd fig6
 $ ./fig6.sh
 
-This will run the algorithm and output the data : the energy.txt file contains
-the energy values and associated time values. The data may for instance be
-plotted with gnuplot :
-
+This will run the algorithm and output the data : the energy.txt file contains the energy values and associated time values. The data may for instance be plotted with gnuplot : 
 $ gnuplot -e "set logscale;set xrange [.8:200]; plot 'energy.txt' u 2:1 w l" -persist
 
 
 Figure 7
 -------------
-To reproduce figure 7, go to the fig7/ folder and run
-the script:
+To reproduce figure 7, go to the fig7/ folder and run the script:
 
 $ cd fig7
 $ ./fig7.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
 
-$ paraview --state=./fig7.pvsm
+$ paraview --state=./fig7_5.4.pvsm
 
 
 Figure 8
 -------------
-To reproduce figure 8, go to the fig8/ folder and run
-the script:
+To reproduce figure 8, go to the fig8/ folder and run the script:
 
 $ cd fig8
 $ ./fig8.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
+ :
 
-$ paraview --state=./fig8.pvsm
+$ paraview --state=./fig8_5.4.pvsm
 
 
 Figure 9
 -------------
-To reproduce figure 9, go to the fig9/ folder and run
-the script:
+To reproduce figure 9, go to the fig9/ folder and run the script:
 
 $ cd fig9
 $ ./fig9.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
+ :
 
-$ paraview --state=./fig9.pvsm
+$ paraview --state=./fig9_5.4.pvsm
 
 
 Figure 10
 -------------
-To reproduce figure 10, go to the fig10/ folder and run
-the script:
+To reproduce figure 10, go to the fig10/ folder and run the script:
 
 $ cd fig10
 $ ./fig10.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
+ :
 
-$ paraview --state=./fig10.pvsm
+$ paraview --state=./fig10_5.4.pvsm
 
 
 Figure 11
 -------------
-To reproduce figure 11, go to the fig11/ folder and run
-the script:
+To reproduce figure 11, go to the fig11/ folder and run the script:
 
 $ cd fig11
 $ ./fig11.sh
 
-This will run the algorithm and output the results as .vtu files in the
-vtu_outputs/ folder.
-To visualize the results, run the attached ParaView state :
+This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
+To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
+ :
 
-$ paraview --state=./fig11.pvsm
+$ paraview --state=./fig11_5.4.pvsm
 
 
 Timings
 -------------
-The additionnal script script/timings.sh runs all the experiments providing
-timing results, namely the content of tables 1 and 2. Attached is the output
-of this script run on our desktop computer, with its specifications.
+The additionnal script script/timings.sh runs all the experiments providing timing results, namely the content of tables 1 and 2. Attached is the output of this script run on our desktop computer, with its specifications.
 
 
 4) Program options and arguments:
 ==
-The above installation have provided you with two executables files : 
-ttkPersistenceDiagramsBarycenterCmd and
-ttkPersistenceDiagramsClusteringCmd, available in `install/bin/`
-
-You can directly use those in order to try out our implementation of our
-method.
+The above installation have provided you with two executables files : ttkPersistenceDiagramsBarycenterCmd and ttkPersistenceDiagramsClusteringCmd, available in `install/bin/` 
+You can directly use those in order to try out our implementation of our method.
 Simply entering one of those commands should list you the needed parameters.
-
 For the barycenter computation : 
 
 $ ./ttkPersistenceDiagramsBarycenterCmd 
@@ -294,10 +259,9 @@ $ ./ttkPersistenceDiagramsClusteringCmd
 [CommandLine] Option(s):
 
 
-A standard exemple for the barycenter computation of two persistence diagrams
-within 1 second and minimal verbosity is :
+A standard exemple for the barycenter computation of two persistence diagrams within 1 second and minimal verbosity is :
 
-$ ttkPersistenceDiagramsBarycenterCmd -i diagram1.vtu -i diagram2.vtu -o output_barycenter -T 1 -d 1 
+$ ./ttkPersistenceDiagramsBarycenterCmd -i diagram1.vtu -i diagram2.vtu -o output_barycenter -T 1 -d 1 
 
 
 Look at the provided scripts for more examples on how to use those commands.
@@ -306,13 +270,11 @@ Look at the provided scripts for more examples on how to use those commands.
 6) Using your own data :
 ==
 
-If you want to test our approach on your own data,
-you will need to pre-compute the persistence diagrams.
-For this purpose, we provide the implementation of Gueunet et al., available
-in the Topology ToolKit (https://topology-tool-kit.github.io/).
+If you want to test our approach on your own data, you will need to pre-compute the persistence diagrams.
+For this purpose, we provide the implementation of Gueunet et al., available in the Topology ToolKit (https://topology-tool-kit.github.io/).
 
 Note that your data must be in a *.vtu* or *.vti* format.
 
 Simply use the ttkPersistenceDiagramCmd command as so :
 
-$ ttkPersistenceDiagramCmd  -i your_vtu_or_vti_data_file -o output_diagram.vtu -F your_scalarField_index_in_the_data
+$ ../ttkPersistenceDiagramCmd  -i your_vtu_or_vti_data_file -o output_diagram.vtu -F your_scalarField_index_in_the_data

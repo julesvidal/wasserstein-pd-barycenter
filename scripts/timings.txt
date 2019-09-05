@@ -7,45 +7,58 @@ Timings : results of tables 1 and 2
 ______ data-set : GAUSSIANS ______
 
 Auction approach
-[PersistenceDiagramsBarycenter] processed in 11341.3 s. (1 thread(s)).
+[PersistenceDiagramsBarycenter] processed in 11116.8 s. (1 thread(s)).
 
 Our approach -- 1 thread
-[PersistenceDiagramsBarycenter] processed in 999.723 s. (1 thread(s)).
+[PersistenceDiagramsBarycenter] processed in 964.129 s. (1 thread(s)).
 
 Our approach -- 8 threads
+[PersistenceDiagramsBarycenter] processed in 144.247 s. (8 thread(s)).
 
 
 ______ data-set : VORTEXSTREET ______
 
 Auction approach
+[PersistenceDiagramsBarycenter] processed in 0.498181 s. (1 thread(s)).
 
 Our approach -- 1 thread
+[PersistenceDiagramsBarycenter] processed in 0.18506 s. (1 thread(s)).
 
 Our approach -- 8 threads
+[PersistenceDiagramsBarycenter] processed in 0.073456 s. (8 thread(s)).
 
 
 ______ data-set : STARTINGVORTEX ______
 
 Auction approach
+[PersistenceDiagramsBarycenter] processed in 0.78043 s. (1 thread(s)).
 
 Our approach -- 1 thread
+[PersistenceDiagramsBarycenter] processed in 0.263026 s. (1 thread(s)).
 
 Our approach -- 8 threads
+[PersistenceDiagramsBarycenter] processed in 0.206575 s. (8 thread(s)).
 
 
 ______ data-set : ISABEL ______
 
 Auction approach
+[PersistenceDiagramsBarycenter] processed in 486.235 s. (1 thread(s)).
 
 Our approach -- 1 thread
+[PersistenceDiagramsBarycenter] processed in 101.683 s. (1 thread(s)).
 
 Our approach -- 8 threads
+[PersistenceDiagramsBarycenter] processed in 37.2678 s. (8 thread(s)).
 
 
 ______ data-set : SEASURFACEHEIGHT ______
 
 Auction approach
+[PersistenceDiagramsBarycenter] processed in 2886.17 s. (1 thread(s)).
 
 Our approach -- 1 thread
+[PersistenceDiagramsBarycenter] processed in 157.818 s. (1 thread(s)).
 
 Our approach -- 8 threads
+[PersistenceDiagramsBarycenter] processed in 41.1126 s. (8 thread(s)).
