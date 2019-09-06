@@ -1,7 +1,8 @@
+The following experimental results were obtained on a computer with
+two Xeon CPUs (3.0 GHz, 2x4 cores), with 64GB of RAM. 
+
 
 Timings : results of tables 1 and 2
-
-
 
 
 ______ data-set : GAUSSIANS ______
