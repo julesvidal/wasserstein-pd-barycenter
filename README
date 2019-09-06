@@ -103,7 +103,6 @@ $ ./fig1.sh
 
 This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
 To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
- :
 
 $ paraview --state=./fig1_5.4.pvsm
 
@@ -117,7 +116,6 @@ $ ./fig5.sh
 
 This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
 To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
- :
 
 $ paraview --state=./fig5_5.4.pvsm
 
@@ -155,7 +153,6 @@ $ ./fig8.sh
 
 This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
 To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
- :
 
 $ paraview --state=./fig8_5.4.pvsm
 
@@ -169,7 +166,6 @@ $ ./fig9.sh
 
 This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
 To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
- :
 
 $ paraview --state=./fig9_5.4.pvsm
 
@@ -183,7 +179,6 @@ $ ./fig10.sh
 
 This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
 To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
- :
 
 $ paraview --state=./fig10_5.4.pvsm
 
@@ -197,7 +192,6 @@ $ ./fig11.sh
 
 This will run the algorithm and output the results as .vtu files in the vtu_outputs/ folder.
 To visualize the results, run the attached ParaView state, according to your version (5.4 or higher):
- :
 
 $ paraview --state=./fig11_5.4.pvsm
 
