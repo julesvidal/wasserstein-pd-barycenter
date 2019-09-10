@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export LD_LIBRARY_PATH="`pwd`/../../install/lib/ttk/"
+
 echo -e "\n\nResults of figure6 : orange plot\n\n" 
 
 echo -e "\n\n______ data-set : SEASURFACEHEIGHT ______" 

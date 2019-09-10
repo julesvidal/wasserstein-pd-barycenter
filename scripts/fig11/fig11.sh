@@ -1,6 +1,8 @@
 #!/bin/bash
 
- echo -e "\n\nResults of figure 11\n\n" 
+export LD_LIBRARY_PATH="`pwd`/../../install/lib/ttk/"
+
+echo -e "\n\nResults of figure 11\n\n" 
 
 fileList=""
 for I in {00..11}; do

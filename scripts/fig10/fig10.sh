@@ -1,5 +1,7 @@
-
 #!/bin/bash
+
+export LD_LIBRARY_PATH="`pwd`/../../install/lib/ttk/"
+
 echo -e "\n\nResults of figure 10"
 
 ##############################################

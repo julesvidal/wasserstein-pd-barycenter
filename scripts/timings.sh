@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export LD_LIBRARY_PATH="`pwd`/../../install/lib/ttk/"
+
 echo -e "\nTimings : results of tables 1 and 2\n\n" 
 
 #############################################
