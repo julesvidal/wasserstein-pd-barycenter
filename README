@@ -57,7 +57,7 @@ $ cmake-gui ../ttk
 The configuration windows opens. Proceed as follows :
 1. Click on the "Configure" button. Use the default settings in the pop-up window.
 2. After configuration, make sure that the following variables are set as follows :  
-  * CMAKE_INSTALL_PREFIX = `../../install`
+  * CMAKE_INSTALL_PREFIX = `../install`
   * TTK_BUILD_PARAVIEW_PLUGINS = OFF
   * TTK_BUILD_STANDALONE_APPS = ON
 3. Click on the "Generate" button and close the configuration window when the generation is completed.
