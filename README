@@ -243,10 +243,17 @@ The additionnal script script/timings.sh runs all the experiments providing timi
 ==
 The above installation have provided you with two executables files : ttkPersistenceDiagramsBarycenterCmd and ttkPersistenceDiagramsClusteringCmd, available in `install/bin/` 
 You can directly use those in order to try out our implementation of our method.
-Simply entering one of those commands should list you the needed parameters.
+
+
+In order to be able to execute them, you will have to link the libraries.
+For instance from the main repository :
+
+$ export LD_LIBRARY_PATH="install/lib/ttk"
+
+Then, simply entering one of those commands should list you the needed parameters.
 For the barycenter computation : 
 
-$ ./ttkPersistenceDiagramsBarycenterCmd 
+$ ./install/bin/ttkPersistenceDiagramsBarycenterCmd 
 [CommandLine] Missing mandatory argument:
 [CommandLine]   -i <{Input data-sets (*.vti, *vtu, *vtp)}>
 [CommandLine]
@@ -266,7 +273,7 @@ $ ./ttkPersistenceDiagramsBarycenterCmd
 
 For the clustering computation : 
 
-$ ./ttkPersistenceDiagramsClusteringCmd
+$ ./install/bin/ttkPersistenceDiagramsClusteringCmd
 [CommandLine] Missing mandatory argument:
 [CommandLine]   -i <{Input data-sets (*.vti, *vtu, *vtp)}>
 [CommandLine]
@@ -293,7 +300,7 @@ $ ./ttkPersistenceDiagramsClusteringCmd
 
 A standard exemple for the barycenter computation of two persistence diagrams within 1 second and minimal verbosity is :
 
-$ ./ttkPersistenceDiagramsBarycenterCmd -i diagram1.vtu -i diagram2.vtu -o output_barycenter -T 1 -d 1 
+$ ./install/bin/ttkPersistenceDiagramsBarycenterCmd -i diagram1.vtu -i diagram2.vtu -o output_barycenter -T 1 -d 1 
 
 
 Look at the provided scripts for more examples on how to use those commands.
@@ -309,4 +316,4 @@ Note that your data must be in a *.vtu* or *.vti* format.
 
 Simply use the ttkPersistenceDiagramCmd command as so :
 
-$ ../ttkPersistenceDiagramCmd  -i your_vtu_or_vti_data_file -o output_diagram.vtu -F your_scalarField_index_in_the_data
+$ ./install/bin/ttkPersistenceDiagramCmd  -i your_vtu_or_vti_data_file -o output_diagram.vtu -F your_scalarField_index_in_the_data
