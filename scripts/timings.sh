@@ -12,9 +12,6 @@ echo -e "\nTimings : results of tables 1 and 2\n\n"
    fileList="$fileList -i ../data/diagrams/gaussians/diagram_"$I".vtu"
  done
 
- echo -e "\nAuction approach" 
- ../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_auction -d -2 -T 100000000 -t 1 -M 2 
-
  echo -e "\nOur approach -- 1 thread" 
  ../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_gaussian_barycenter_ours_1thr -d -2 -T 100000000 -t 1 -M 0 
 
@@ -29,9 +26,6 @@ fileList=""
 for I in {00..44}; do
   fileList="$fileList -i ../data/diagrams/vortexStreet/diagram_"$I".vtu"
 done
-
-echo -e "\nAuction approach" 
-../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_auction -d -2 -T 100000000 -t 1 -M 2 
 
 echo -e "\nOur approach -- 1 thread" 
 ../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_vortexStreet_barycenter_ours_1thr -d -2 -T 100000000 -t 1 -M 0 
@@ -48,9 +42,6 @@ for I in {00..11}; do
   fileList="$fileList -i ../data/diagrams/startingVortex/diagram_"$I".vtu"
 done
 
-echo -e "\nAuction approach" 
-../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_auction -d -2 -T 100000000 -t 1 -M 2 
-
 echo -e "\nOur approach -- 1 thread" 
 ../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_startingVortex_barycenter_ours_1thr -d -2 -T 100000000 -t 1 -M 0 
 
@@ -66,9 +57,6 @@ for I in {00..11}; do
   fileList="$fileList -i ../data/diagrams/isabel/diagram_"$I".vtu"
 done
 
-echo -e "\nAuction approach" 
-../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_auction -d -2 -T 100000000 -t 1 -M 2 
-
 echo -e "\nOur approach -- 1 thread" 
 ../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_isabel_barycenter_ours_1thr -d -2 -T 100000000 -t 1 -M 0 
 
@@ -83,9 +71,6 @@ fileList=""
 for I in {00..47}; do
   fileList="$fileList -i ../data/diagrams/seaSurfaceHeight/diagram_"$I".vtu"
 done
-
-echo -e "\nAuction approach" 
-../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_auction -d -2 -T 100000000 -t 1 -M 2 
 
 echo -e "\nOur approach -- 1 thread" 
 ../install/bin/ttkPersistenceDiagramsBarycenterCmd $fileList -o output_seaSurfaceHeight_barycenter_ours_1thr -d -2 -T 100000000 -t 1 -M 0 

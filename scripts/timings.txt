@@ -7,9 +7,6 @@ Timings : results of tables 1 and 2
 
 ______ data-set : GAUSSIANS ______
 
-Auction approach
-[PersistenceDiagramsBarycenter] processed in 11116.8 s. (1 thread(s)).
-
 Our approach -- 1 thread
 [PersistenceDiagramsBarycenter] processed in 964.129 s. (1 thread(s)).
 
@@ -18,9 +15,6 @@ Our approach -- 8 threads
 
 
 ______ data-set : VORTEXSTREET ______
-
-Auction approach
-[PersistenceDiagramsBarycenter] processed in 0.498181 s. (1 thread(s)).
 
 Our approach -- 1 thread
 [PersistenceDiagramsBarycenter] processed in 0.18506 s. (1 thread(s)).
@@ -31,9 +25,6 @@ Our approach -- 8 threads
 
 ______ data-set : STARTINGVORTEX ______
 
-Auction approach
-[PersistenceDiagramsBarycenter] processed in 0.78043 s. (1 thread(s)).
-
 Our approach -- 1 thread
 [PersistenceDiagramsBarycenter] processed in 0.263026 s. (1 thread(s)).
 
@@ -43,9 +34,6 @@ Our approach -- 8 threads
 
 ______ data-set : ISABEL ______
 
-Auction approach
-[PersistenceDiagramsBarycenter] processed in 486.235 s. (1 thread(s)).
-
 Our approach -- 1 thread
 [PersistenceDiagramsBarycenter] processed in 101.683 s. (1 thread(s)).
 
@@ -54,9 +42,6 @@ Our approach -- 8 threads
 
 
 ______ data-set : SEASURFACEHEIGHT ______
-
-Auction approach
-[PersistenceDiagramsBarycenter] processed in 2886.17 s. (1 thread(s)).
 
 Our approach -- 1 thread
 [PersistenceDiagramsBarycenter] processed in 157.818 s. (1 thread(s)).
