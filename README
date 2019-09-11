@@ -135,8 +135,8 @@ To reproduce the orange curve of figure 6, go to the fig6/ folder and run the sc
 $ cd fig6
 $ ./fig6.sh
 
-This will run the algorithm and output the data : the energy.txt file contains the energy values and associated time values. The data may for instance be plotted with gnuplot : 
-$ gnuplot -e "set logscale;set xrange [.8:200]; plot 'energy.txt' u 2:1 w l" -persist
+This will run the algorithm and output the data : the energy.txt file contains the energy values and associated time values. The data may be plotted with python : 
+$ python fig6.py
 
 
 Figure 7
@@ -248,7 +248,7 @@ You can directly use those in order to try out our implementation of our method.
 In order to be able to execute them, you will have to link the libraries.
 For instance from the main repository :
 
-$ export LD_LIBRARY_PATH="install/lib/ttk"
+$ export LD_LIBRARY_PATH="`pwd`/install/lib/ttk"
 
 Then, simply entering one of those commands should list you the needed parameters.
 For the barycenter computation : 
