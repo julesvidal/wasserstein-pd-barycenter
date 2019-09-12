@@ -22,7 +22,7 @@ Proceedings of IEEE VIS 2019.
 
 INSTRUCTIONS
 ===
-The following instructions are for Unix environments (MacOS, Linux, etc.). For Windows users, please follow the usual procedure to import a CMake project into VisualStudio (please be careful though, important directory paths may need to be changed for the program to run properly).
+The following instructions are for Ubuntu 18.04 LTS
 
 
 1) Software requirements:
